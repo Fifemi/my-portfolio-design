@@ -5,54 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
 </head>
 <body>
     <div class="main-container">
         <nav class="navigation">
-            <li class="link-one"><a href="">200px X 40px</a></li>
-            <div class="links">
-                <li><a href="">Home</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li class="contact"><a href="">Contact []</a></li>
-            </div>
-        </nav>
+            <label class="logo">Fadeelah DesignX</label>
+
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">About</a>
+                <a href="#contact">Portfolio</a>
+                <a href="#about">News</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+           </div>
+        </nav>  
         
         <main class="hero-section">
-            <div class="texts">
-                <h1 class="h1">Welcome to my website</h1>
-                <h2 class="h2">Hi, I'm <span>Fadeelah Oluwafifehanmi Ipaye.</span> I'm an hands-on trainee in frontend development with practical approach in Time Management. HTML5. CSS3. JavaScript</h2>
-                <a href="" class="get-in">GET IN TOUCH []</a>
+            <div class="hero-content">
+                <h1 class="h2">Welcome to my website</h1>
+                <h2 class="h3">Hi, I'm <span>Fadeelah Oluwafifehanmi Ipaye.</span> I'm an hands-on trainee in frontend development with practical approach in Time Management. HTML5. CSS3. JavaScript</h2>
+                <button type="button" class="get-in-btn">
+                  GET IN TOUCH 
+                </button>
             </div>
-            
-                <img src="./images/IMG_2133.JPG" alt="photo" width="700px" height="800px">
-            
+            <div class="img-div">
+                <img src="./assets/IMG_2133.JPG" alt="photo" width="450px" height="450px" class="fad-image">
+            </div>
         </main>
 
-          <div class="section">
-            <h2 class="h2">Recent Projects</h2>
-            <h3 class="h3">Below you can see some examples of my recent work. Check out my complete <a href="../flower website/">Portfolio</a></h3>
-            <h3 class="h3">Have a project you'd like to discuss? <a href="#">Let's make something great together!</a></h3>
-        <section>
+            <div class="project-section">
+                <h2 class="recent">Recent Projects</h2>
+                <h3 class="content1">Below you can see some examples of my recent work. Check out my complete <a href="../flower website/">Portfolio</a></h3>
+                <h3 class="content2">Have a project you'd like to discuss? <br><a href="#">Let's make something great together!</a></h3>
+            </div>
+          <section class="gallery-section">
             <div class="img-1">
-                <a href=""><img src="./images/project-smoothie.jpg" alt="photo"></a>
-             <h1 class="hero-text"><a href="">Smooth Smoothies</a></h1>
-             <p class="P">Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
-             <a href="" class="get-in">VIEW PROJECT[]</a>
+                <a href=""><img src="./assets/project-smoothie.jpg" alt="photo" width="300px" height="150px"></a>
+                <h1 class="hero-text"><a href="">Smooth Smoothies</a></h1>
+                <div class="bg-gray">
+                    <p class="gray-text">Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.</p>
+                    <button class="view-btn">View Project</button>
+                </div>
+
             </div>
             <div class="img-1">
-                <a href=""><img src="./images/project-software-1.png" alt="photo"></a>
+                <a href=""><img src="./assets/project-software-1.png" alt="photo" width="300px" height="150px"></a>
                 <h1 class="hero-text"><a href="">Software Analytics</a></h1>
-                <p class="P">Everything you need to know about your website traffic, without spying on visitors' personal information.</p>
-                <a href="" class="get-in">VIEW PROJECT[]</a>
+                <div class="bg-gray">
+                    <p class="gray-text">Everything you need to know about your website traffic, without spying on visitors' personal information.</p>
+                    <button class="view-btn">View Project</button>
+                </div>
             </div>
             <div class="img-1">
-                <a href=""><img src="./images/project-travel.jpg" alt="photo"></a>
+                <a href=""><img src="./assets/project-travel1.jpg" alt="photo" width="300px" height="150px"></a>
                 <h1 class="hero-text"><a href="">IBAT Tours</a></h1>
-                <p class="P">Need a holiday? IBAT Tours provides happy holiday experiences at affordable prices</p>
-                <a href="" class="get-in">VIEW PROJECT[]</a>
+                <div class="bg-gray">
+                    <p class="gray-text">Need a holiday? IBAT Tours provides happy holiday experiences at affordable prices</p>
+                    <button type="button" class="view-btn">View Project</button>
+                </div>
             </div>
-        </section>
+          </section>
     </div>
 
      <footer>
@@ -73,5 +95,16 @@
         <a href="" class="privacy">Privacy & Legal</a>
     </footer>
     </div>
+
+    <script src="js/all.js">
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+      </script>
 </body>
 </html>
